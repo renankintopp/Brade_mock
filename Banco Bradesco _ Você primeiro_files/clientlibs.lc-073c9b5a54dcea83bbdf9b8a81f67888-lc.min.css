@@ -1,0 +1,977 @@
+/* ================================
+   Grid Utilities - Classes utilitárias para Grid
+   Sistema de 12 colunas e 12 linhas
+   ================================ */
+/* ================================
+   Grid Container - Colunas (1-12)
+   ================================ */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid-cols-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid-cols-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.grid-cols-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+/* ================================
+   Grid Container - Linhas (1-12)
+   ================================ */
+.grid-rows-1 {
+  grid-template-rows: repeat(1, auto);
+}
+.grid-rows-2 {
+  grid-template-rows: repeat(2, auto);
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, auto);
+}
+.grid-rows-4 {
+  grid-template-rows: repeat(4, auto);
+}
+.grid-rows-5 {
+  grid-template-rows: repeat(5, auto);
+}
+.grid-rows-6 {
+  grid-template-rows: repeat(6, auto);
+}
+.grid-rows-7 {
+  grid-template-rows: repeat(7, auto);
+}
+.grid-rows-8 {
+  grid-template-rows: repeat(8, auto);
+}
+.grid-rows-9 {
+  grid-template-rows: repeat(9, auto);
+}
+.grid-rows-10 {
+  grid-template-rows: repeat(10, auto);
+}
+.grid-rows-11 {
+  grid-template-rows: repeat(11, auto);
+}
+.grid-rows-12 {
+  grid-template-rows: repeat(12, auto);
+}
+/* ================================
+   Grid Gap (8px increments)
+   ================================ */
+.gap-0 {
+  gap: 0;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.gap-48 {
+  gap: 48px;
+}
+/* Column Gap */
+.col-gap-0 {
+  column-gap: 0;
+}
+.col-gap-8 {
+  column-gap: 8px;
+}
+.col-gap-16 {
+  column-gap: 16px;
+}
+.col-gap-24 {
+  column-gap: 24px;
+}
+.col-gap-32 {
+  column-gap: 32px;
+}
+.col-gap-40 {
+  column-gap: 40px;
+}
+.col-gap-48 {
+  column-gap: 48px;
+}
+/* Row Gap */
+.row-gap-0 {
+  row-gap: 0;
+}
+.row-gap-8 {
+  row-gap: 8px;
+}
+.row-gap-16 {
+  row-gap: 16px;
+}
+.row-gap-24 {
+  row-gap: 24px;
+}
+.row-gap-32 {
+  row-gap: 32px;
+}
+.row-gap-40 {
+  row-gap: 40px;
+}
+.row-gap-48 {
+  row-gap: 48px;
+}
+/* ================================
+   Grid Item - Column Span (1-12)
+   ================================ */
+.col-span-1 {
+  grid-column: span 1;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+.col-span-3 {
+  grid-column: span 3;
+}
+.col-span-4 {
+  grid-column: span 4;
+}
+.col-span-5 {
+  grid-column: span 5;
+}
+.col-span-6 {
+  grid-column: span 6;
+}
+.col-span-7 {
+  grid-column: span 7;
+}
+.col-span-8 {
+  grid-column: span 8;
+}
+.col-span-9 {
+  grid-column: span 9;
+}
+.col-span-10 {
+  grid-column: span 10;
+}
+.col-span-11 {
+  grid-column: span 11;
+}
+.col-span-12 {
+  grid-column: span 12;
+}
+/* ================================
+   Grid Item - Row Span (1-12)
+   ================================ */
+.row-span-1 {
+  grid-row: span 1;
+}
+.row-span-2 {
+  grid-row: span 2;
+}
+.row-span-3 {
+  grid-row: span 3;
+}
+.row-span-4 {
+  grid-row: span 4;
+}
+.row-span-5 {
+  grid-row: span 5;
+}
+.row-span-6 {
+  grid-row: span 6;
+}
+.row-span-7 {
+  grid-row: span 7;
+}
+.row-span-8 {
+  grid-row: span 8;
+}
+.row-span-9 {
+  grid-row: span 9;
+}
+.row-span-10 {
+  grid-row: span 10;
+}
+.row-span-11 {
+  grid-row: span 11;
+}
+.row-span-12 {
+  grid-row: span 12;
+}
+/* ================================
+   Grid Item - Order (0-12)
+   ================================ */
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}
+.order-6 {
+  order: 6;
+}
+.order-7 {
+  order: 7;
+}
+.order-8 {
+  order: 8;
+}
+.order-9 {
+  order: 9;
+}
+.order-10 {
+  order: 10;
+}
+.order-11 {
+  order: 11;
+}
+.order-12 {
+  order: 12;
+}
+/* ================================
+   Grid Alignment - Justify Items
+   ================================ */
+.justify-items-start {
+  justify-items: start;
+}
+.justify-items-end {
+  justify-items: end;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.justify-items-stretch {
+  justify-items: stretch;
+}
+/* ================================
+   Grid Alignment - Align Items
+   ================================ */
+.align-items-start {
+  align-items: start;
+}
+.align-items-end {
+  align-items: end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+/* ================================
+   Tablet Breakpoint (max-width: 1024px)
+   ================================ */
+@media (max-width: 1024px) {
+  /* Grid Container - Colunas Tablet */
+  .tablet\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tablet\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tablet\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tablet\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tablet\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .tablet\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .tablet\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .tablet\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .tablet\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .tablet\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .tablet\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .tablet\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  /* Grid Item - Column Span Tablet */
+  .tablet\:col-span-1 {
+    grid-column: span 1;
+  }
+  .tablet\:col-span-2 {
+    grid-column: span 2;
+  }
+  .tablet\:col-span-3 {
+    grid-column: span 3;
+  }
+  .tablet\:col-span-4 {
+    grid-column: span 4;
+  }
+  .tablet\:col-span-5 {
+    grid-column: span 5;
+  }
+  .tablet\:col-span-6 {
+    grid-column: span 6;
+  }
+  .tablet\:col-span-7 {
+    grid-column: span 7;
+  }
+  .tablet\:col-span-8 {
+    grid-column: span 8;
+  }
+  .tablet\:col-span-9 {
+    grid-column: span 9;
+  }
+  .tablet\:col-span-10 {
+    grid-column: span 10;
+  }
+  .tablet\:col-span-11 {
+    grid-column: span 11;
+  }
+  .tablet\:col-span-12 {
+    grid-column: span 12;
+  }
+  /* Grid Item - Row Span Tablet */
+  .tablet\:row-span-1 {
+    grid-row: span 1;
+  }
+  .tablet\:row-span-2 {
+    grid-row: span 2;
+  }
+  .tablet\:row-span-3 {
+    grid-row: span 3;
+  }
+  .tablet\:row-span-4 {
+    grid-row: span 4;
+  }
+  .tablet\:row-span-5 {
+    grid-row: span 5;
+  }
+  .tablet\:row-span-6 {
+    grid-row: span 6;
+  }
+  .tablet\:row-span-7 {
+    grid-row: span 7;
+  }
+  .tablet\:row-span-8 {
+    grid-row: span 8;
+  }
+  .tablet\:row-span-9 {
+    grid-row: span 9;
+  }
+  .tablet\:row-span-10 {
+    grid-row: span 10;
+  }
+  .tablet\:row-span-11 {
+    grid-row: span 11;
+  }
+  .tablet\:row-span-12 {
+    grid-row: span 12;
+  }
+  /* Grid Item - Order Tablet */
+  .tablet\:order-0 {
+    order: 0;
+  }
+  .tablet\:order-1 {
+    order: 1;
+  }
+  .tablet\:order-2 {
+    order: 2;
+  }
+  .tablet\:order-3 {
+    order: 3;
+  }
+  .tablet\:order-4 {
+    order: 4;
+  }
+  .tablet\:order-5 {
+    order: 5;
+  }
+  .tablet\:order-6 {
+    order: 6;
+  }
+  .tablet\:order-7 {
+    order: 7;
+  }
+  .tablet\:order-8 {
+    order: 8;
+  }
+  .tablet\:order-9 {
+    order: 9;
+  }
+  .tablet\:order-10 {
+    order: 10;
+  }
+  .tablet\:order-11 {
+    order: 11;
+  }
+  .tablet\:order-12 {
+    order: 12;
+  }
+  /* Gap Tablet */
+  .tablet\:gap-0 {
+    gap: 0;
+  }
+  .tablet\:gap-8 {
+    gap: 8px;
+  }
+  .tablet\:gap-16 {
+    gap: 16px;
+  }
+  .tablet\:gap-24 {
+    gap: 24px;
+  }
+  .tablet\:gap-32 {
+    gap: 32px;
+  }
+  /* Layout Direction Tablet */
+  .tablet\:flex-column {
+    flex-direction: column !important;
+  }
+}
+/* ================================
+   Mobile Breakpoint (max-width: 768px)
+   ================================ */
+@media (max-width: 768px) {
+  /* Grid Container - Colunas Mobile */
+  .mobile\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mobile\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mobile\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mobile\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mobile\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .mobile\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .mobile\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .mobile\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .mobile\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .mobile\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .mobile\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .mobile\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  /* Grid Item - Column Span Mobile */
+  .mobile\:col-span-1 {
+    grid-column: span 1;
+  }
+  .mobile\:col-span-2 {
+    grid-column: span 2;
+  }
+  .mobile\:col-span-3 {
+    grid-column: span 3;
+  }
+  .mobile\:col-span-4 {
+    grid-column: span 4;
+  }
+  .mobile\:col-span-5 {
+    grid-column: span 5;
+  }
+  .mobile\:col-span-6 {
+    grid-column: span 6;
+  }
+  .mobile\:col-span-7 {
+    grid-column: span 7;
+  }
+  .mobile\:col-span-8 {
+    grid-column: span 8;
+  }
+  .mobile\:col-span-9 {
+    grid-column: span 9;
+  }
+  .mobile\:col-span-10 {
+    grid-column: span 10;
+  }
+  .mobile\:col-span-11 {
+    grid-column: span 11;
+  }
+  .mobile\:col-span-12 {
+    grid-column: span 12;
+  }
+  /* Grid Item - Row Span Mobile */
+  .mobile\:row-span-1 {
+    grid-row: span 1;
+  }
+  .mobile\:row-span-2 {
+    grid-row: span 2;
+  }
+  .mobile\:row-span-3 {
+    grid-row: span 3;
+  }
+  .mobile\:row-span-4 {
+    grid-row: span 4;
+  }
+  .mobile\:row-span-5 {
+    grid-row: span 5;
+  }
+  .mobile\:row-span-6 {
+    grid-row: span 6;
+  }
+  .mobile\:row-span-7 {
+    grid-row: span 7;
+  }
+  .mobile\:row-span-8 {
+    grid-row: span 8;
+  }
+  .mobile\:row-span-9 {
+    grid-row: span 9;
+  }
+  .mobile\:row-span-10 {
+    grid-row: span 10;
+  }
+  .mobile\:row-span-11 {
+    grid-row: span 11;
+  }
+  .mobile\:row-span-12 {
+    grid-row: span 12;
+  }
+  /* Grid Item - Order Mobile */
+  .mobile\:order-0 {
+    order: 0;
+  }
+  .mobile\:order-1 {
+    order: 1;
+  }
+  .mobile\:order-2 {
+    order: 2;
+  }
+  .mobile\:order-3 {
+    order: 3;
+  }
+  .mobile\:order-4 {
+    order: 4;
+  }
+  .mobile\:order-5 {
+    order: 5;
+  }
+  .mobile\:order-6 {
+    order: 6;
+  }
+  .mobile\:order-7 {
+    order: 7;
+  }
+  .mobile\:order-8 {
+    order: 8;
+  }
+  .mobile\:order-9 {
+    order: 9;
+  }
+  .mobile\:order-10 {
+    order: 10;
+  }
+  .mobile\:order-11 {
+    order: 11;
+  }
+  .mobile\:order-12 {
+    order: 12;
+  }
+  /* Gap Mobile */
+  .mobile\:gap-0 {
+    gap: 0;
+  }
+  .mobile\:gap-8 {
+    gap: 8px;
+  }
+  .mobile\:gap-16 {
+    gap: 16px;
+  }
+  .mobile\:gap-24 {
+    gap: 24px;
+  }
+  .mobile\:gap-32 {
+    gap: 32px;
+  }
+  /* Layout Direction Mobile */
+  .mobile\:flex-column {
+    flex-direction: column !important;
+  }
+  .mobile\:flex-row {
+    flex-direction: row !important;
+  }
+}
+
+/* Grid Container Component Styles */
+.cmp-grid-container-wrapper {
+  /* Valores padrão podem ser sobrescritos via data attributes */
+  margin: var(--grid-wrapper-margin, 0);
+  padding: var(--grid-wrapper-padding, 0);
+}
+.cmp-grid-container {
+  display: grid;
+  width: 100%;
+  min-height: 150px;
+  /* Padding do conteúdo pode ser configurado via data attribute */
+  padding: var(--grid-content-padding, 0);
+  max-width: var(--grid-content-max-width, none);
+  margin-left: var(--grid-content-margin-left, auto);
+  margin-right: var(--grid-content-margin-right, auto);
+  /* Responsive grid do AEM (parsys) - remove da hierarquia visual */
+  /* Esconde elementos cq de debug/edição */
+  /* Área de drop vazia - expande para ocupar todo o grid */
+}
+.cmp-grid-container > .aem-Grid,
+.cmp-grid-container > .responsivegrid {
+  display: contents;
+  /* Remove pseudo-elementos que atrapalham o grid */
+  /* Cada wrapper de componente também usa contents */
+  /* Esconde elementos de edição do AEM que não são componentes reais */
+}
+.cmp-grid-container > .aem-Grid::before,
+.cmp-grid-container > .responsivegrid::before,
+.cmp-grid-container > .aem-Grid::after,
+.cmp-grid-container > .responsivegrid::after {
+  display: none !important;
+  content: none !important;
+}
+.cmp-grid-container > .aem-Grid > .aem-GridColumn,
+.cmp-grid-container > .responsivegrid > .aem-GridColumn {
+  display: contents;
+  /* Remove pseudo-elementos dos wrappers também */
+  /* Item ativo no editor (selecionado via Panel Selector) */
+}
+.cmp-grid-container > .aem-Grid > .aem-GridColumn::before,
+.cmp-grid-container > .responsivegrid > .aem-GridColumn::before,
+.cmp-grid-container > .aem-Grid > .aem-GridColumn::after,
+.cmp-grid-container > .responsivegrid > .aem-GridColumn::after {
+  display: none !important;
+  content: none !important;
+}
+.cmp-grid-container > .aem-Grid > .aem-GridColumn.cmp-grid-container__item--active > *,
+.cmp-grid-container > .responsivegrid > .aem-GridColumn.cmp-grid-container__item--active > * {
+  outline: 2px solid #4285f4 !important;
+  outline-offset: 2px;
+}
+.cmp-grid-container > .aem-Grid > cq,
+.cmp-grid-container > .responsivegrid > cq,
+.cmp-grid-container > .aem-Grid > .new.newpar.section,
+.cmp-grid-container > .responsivegrid > .new.newpar.section,
+.cmp-grid-container > .aem-Grid > .aem-Grid-newComponent,
+.cmp-grid-container > .responsivegrid > .aem-Grid-newComponent {
+  display: none !important;
+}
+.cmp-grid-container cq {
+  display: none !important;
+}
+.cmp-grid-container:empty,
+.cmp-grid-container > .aem-Grid:empty {
+  min-height: 150px;
+}
+/* Grid item */
+.cmp-grid-container__item {
+  min-width: 0;
+}
+/* ================================
+   Modo Slider (Scroll Horizontal)
+   ================================ */
+.cmp-grid-container--slider {
+  display: flex !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  cursor: grab;
+  user-select: none;
+  /* Remove grid columns quando em modo slider */
+  grid-template-columns: none !important;
+  /* Cursor durante drag */
+  /* No modo slider, removemos o display: contents para permitir controle de tamanho */
+  /* Scrollbar customizada */
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #CC092F #F0F0F0;
+}
+.cmp-grid-container--slider.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+.cmp-grid-container--slider > .aem-Grid,
+.cmp-grid-container--slider > .responsivegrid {
+  display: flex !important;
+  gap: inherit;
+  /* Remove pseudo-elementos */
+  /* Cada wrapper de componente precisa ter display block/flex */
+  /* Esconde elementos de edição */
+}
+.cmp-grid-container--slider > .aem-Grid::before,
+.cmp-grid-container--slider > .responsivegrid::before,
+.cmp-grid-container--slider > .aem-Grid::after,
+.cmp-grid-container--slider > .responsivegrid::after {
+  display: none !important;
+}
+.cmp-grid-container--slider > .aem-Grid > .aem-GridColumn,
+.cmp-grid-container--slider > .responsivegrid > .aem-GridColumn {
+  display: block !important;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 270px !important;
+  /* Remove pseudo-elementos */
+  /* O componente interno ocupa 100% */
+}
+.cmp-grid-container--slider > .aem-Grid > .aem-GridColumn::before,
+.cmp-grid-container--slider > .responsivegrid > .aem-GridColumn::before,
+.cmp-grid-container--slider > .aem-Grid > .aem-GridColumn::after,
+.cmp-grid-container--slider > .responsivegrid > .aem-GridColumn::after {
+  display: none !important;
+}
+.cmp-grid-container--slider > .aem-Grid > .aem-GridColumn > *,
+.cmp-grid-container--slider > .responsivegrid > .aem-GridColumn > * {
+  width: 100%;
+  height: 100%;
+}
+.cmp-grid-container--slider > .aem-Grid > cq,
+.cmp-grid-container--slider > .responsivegrid > cq,
+.cmp-grid-container--slider > .aem-Grid > .new.newpar.section,
+.cmp-grid-container--slider > .responsivegrid > .new.newpar.section,
+.cmp-grid-container--slider > .aem-Grid > .aem-Grid-newComponent,
+.cmp-grid-container--slider > .responsivegrid > .aem-Grid-newComponent {
+  display: none !important;
+}
+.cmp-grid-container--slider::-webkit-scrollbar {
+  height: 6px;
+}
+.cmp-grid-container--slider::-webkit-scrollbar-track {
+  background: #F0F0F0;
+  border-radius: 3px;
+}
+.cmp-grid-container--slider::-webkit-scrollbar-thumb {
+  background: #CC092F;
+  border-radius: 3px;
+}
+.cmp-grid-container--slider::-webkit-scrollbar-thumb:hover {
+  background: #A00725;
+}
+.cmp-grid-container-wrapper--slider {
+  position: relative;
+}
+.cmp-grid-container-wrapper--slider .cmp-grid-container--slider {
+  padding-bottom: 12px;
+  /* Espaço para a scrollbar */
+}
+.cmp-grid-container__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Variação Highlight - Título destacado com linha vermelha */
+  /* Variação Secondary - Título secundário sem linha */
+  /* Deprecated - mantido para compatibilidade */
+}
+.cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--highlight .cmp-grid-container__title {
+  font-family: 'Bradesco Sans SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--highlight .cmp-grid-container__title__border {
+  width: 78px;
+  height: 4px;
+  opacity: 1;
+  border-radius: 10px;
+  background: #CC092F;
+  margin-top: 20px;
+}
+.cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--secondary .cmp-grid-container__title {
+  font-family: 'Bradesco Sans SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.cmp-grid-container__title-wrapper .cmp-grid-container__title {
+  font-family: 'Bradesco Sans SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.cmp-grid-container__title-wrapper .cmp-grid-container__title__border {
+  width: 78px;
+  height: 4px;
+  opacity: 1;
+  border-radius: 6.5px;
+  background: #CC092F;
+  margin-top: 20px;
+}
+.cmp-grid-container__more_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cmp-grid-container__more_wrapper .cmp-grid-container__more {
+  font-family: 'Bradesco Sans SemiBold', sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3B69FF;
+}
+/* ================================
+   Responsivo - Tablet
+   ================================ */
+@media (max-width: 1024px) {
+  .cmp-grid-container-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .cmp-grid-container__title-wrapper {
+    align-items: flex-start;
+  }
+  .cmp-grid-container__title-wrapper .cmp-grid-container__title {
+    text-align: left;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--highlight .cmp-grid-container__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--secondary .cmp-grid-container__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  /* Slider responsivo - tablet */
+  .cmp-grid-container--slider > .aem-Grid > .aem-GridColumn,
+  .cmp-grid-container--slider > .responsivegrid > .aem-GridColumn {
+    width: 270px !important;
+  }
+}
+/* ================================
+   Responsivo - Mobile
+   ================================ */
+@media (max-width: 1024px) {
+  .cmp-grid-container-wrapper {
+    /* Usa custom properties mobile se definidas, senão usa valores padrão */
+    margin-top: var(--mobile-margin-top, 20px) !important;
+    margin-right: var(--mobile-margin-right, 0) !important;
+    margin-bottom: var(--mobile-margin-bottom, 20px) !important;
+    margin-left: var(--mobile-margin-left, 0) !important;
+    padding-top: var(--mobile-padding-top, 0) !important;
+    padding-right: var(--mobile-padding-right, 16px) !important;
+    padding-bottom: var(--mobile-padding-bottom, 0) !important;
+    padding-left: var(--mobile-padding-left, 16px) !important;
+  }
+  .cmp-grid-container {
+    /* Usa custom properties mobile content padding se definidas, senão usa valores padrão */
+    padding-top: var(--mobile-content-padding-top, 16px) !important;
+    padding-right: var(--mobile-content-padding-right, 0) !important;
+    padding-bottom: var(--mobile-content-padding-bottom, 16px) !important;
+    padding-left: var(--mobile-content-padding-left, 0) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+  }
+  .cmp-grid-container__title-wrapper {
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .cmp-grid-container__title-wrapper .cmp-grid-container__title {
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .cmp-grid-container__title-wrapper .cmp-grid-container__title__border {
+    width: 60px;
+    height: 3px;
+    margin-top: 16px;
+  }
+  .cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--highlight .cmp-grid-container__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .cmp-grid-container__title-wrapper.cmp-grid-container__title-wrapper--secondary .cmp-grid-container__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .cmp-grid-container__more_wrapper {
+    margin-top: 16px;
+  }
+  /* Slider responsivo - mobile */
+  .cmp-grid-container--slider {
+    gap: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cmp-grid-container--slider > .aem-Grid > .aem-GridColumn,
+  .cmp-grid-container--slider > .responsivegrid > .aem-GridColumn {
+    width: 270px !important;
+  }
+  .cmp-grid-container--slider::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+/* ================================
+   Estilos para o Editor AEM
+   ================================ */
+/* Já definidos em editor/css/editor.css */

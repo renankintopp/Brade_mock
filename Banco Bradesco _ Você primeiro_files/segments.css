@@ -1,0 +1,187 @@
+.segments-mobile {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 125px;
+  width: 100%;
+  z-index: 999;
+}
+
+.segments-mobile hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  opacity: 0.3;
+}
+
+.segments-mobile .item {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.segments-mobile .for-you:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 6px solid #C50030;
+}
+
+.segments-mobile .for-you.active:before {
+  display: none;
+}
+
+.segments-mobile>div.for-you.active {
+  background: transparent linear-gradient(105deg, #f36279 0%, #cc092f 51%, #b41a83 100%) 0% 0% no-repeat padding-box;
+  border-top: none !important;
+}
+
+.segments-mobile>div.for-your-company.active {
+  background: transparent linear-gradient(287deg, #cc092f 0%, #c7105b 23%, #333b8f 100%) 0% 0% no-repeat padding-box;
+  border-top: none !important;
+}
+
+.segments-mobile>div h3 {
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.segments-mobile>div h3::before {
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  left: auto;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.segments-mobile .for-you-cotent {
+  width: 100vw;
+  height: auto;
+  background-image: linear-gradient(to right bottom,
+      #f36279,
+      #ed556b,
+      #e6485e,
+      #df3a50,
+      #d72a42,
+      #d42043,
+      #d01444,
+      #cd0045,
+      #cb0055,
+      #c60065,
+      #be0774,
+      #b41a83);
+  padding: 20px;
+  font-size: 0.8rem;
+  position: absolute;
+  z-index: 9999;
+  top: 99%;
+  left: 0;
+  display: none;
+  text-align: start;
+}
+
+.segments-mobile .for-your-company-cotent {
+  width: 100vw;
+  height: auto;
+  background-image: linear-gradient(to right bottom,
+      rgb(43, 70, 156),
+      rgb(117, 58, 154),
+      rgb(170, 34, 136),
+      rgb(207, 0, 104),
+      rgb(225, 23, 63));
+  padding: 20px;
+  font-size: 0.8rem;
+  position: absolute;
+  z-index: 9999;
+  top: 99%;
+  left: 0;
+  display: none;
+  text-align: start;
+}
+
+.segments-mobile>.segments-mobile-content li {
+  padding: 5px 0;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.segments-mobile>.segments-mobile-content li:hover {
+  opacity: 0.8;
+}
+
+.segments-mobile>div.for-you.active~.for-you-cotent {
+  display: block;
+}
+
+.segments-mobile>div.for-your-company.active~.for-your-company-cotent {
+  display: block;
+}
+
+.segments-mobile .segments-mobile-content span,
+.segments-mobile>div.active span {
+  color: #fff !important;
+}
+
+.segments-mobile>div.active span::after {
+  color: #fff;
+  transform: rotate(270deg);
+  right: 15px;
+}
+
+.segments-mobile>div>span {
+  display: flex;
+  align-items: center;
+}
+
+.segments-mobile>div>span:after {
+  display: block;
+  content: "\203A";
+  font-size: 35px;
+  font-weight: normal;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform: rotate(10deg);
+  margin-left: 15px;
+  color: #47484c;
+}
+
+.segments-mobile>div .showMore ul {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s;
+}
+
+.segments-mobile>div .showMore.active ul {
+  max-height: 200px;
+}
+
+.segments-mobile>div .showMore.active ul li {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .segments-mobile {
+    display: flex;
+  }
+}

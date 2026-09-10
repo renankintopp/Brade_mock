@@ -1,0 +1,555 @@
+body.show-online-hire-v2 .online-hire {
+    display: none;
+}
+
+.online-hire {
+    width: 100%;
+    position: relative;
+    min-height: 320px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+.online-hire .non-account-holder {
+    width: calc(100% - 20px);
+    background-color: #ebebeb;
+    position: absolute;
+    margin: 0 10px;
+    padding: 50px 0 80px;
+    z-index: 2;
+    top: -45px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.online-hire .non-account-holder:hover {
+    background: linear-gradient(45deg,
+            #f36279 0%,
+            #cc092f 35%,
+            #cc092f 50%,
+            #b41a83 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f36279', endColorstr='#b41a83', GradientType=1);
+}
+
+.online-hire .non-account-holder:hover span {
+    color: #FFF;
+}
+
+.online-hire .non-account-holder span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+.online-hire .non-account-holder .red-arrow {
+    display: block;
+}
+
+.online-hire .non-account-holder .white-arrow {
+    display: none;
+}
+
+.online-hire .non-account-holder:hover .red-arrow {
+    display: none;
+}
+
+.online-hire .non-account-holder:hover .white-arrow {
+    display: block;
+}
+
+.online-hire .cards {
+    z-index: 3;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    top: -25px;
+}
+
+.online-hire .cards .card {
+    background: #fff;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.75rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.online-hire .cards .card .card-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem 1.3rem 1rem 1.3rem;
+    text-align: center;
+    max-width: 170px;
+    height: auto;
+    min-height: 240px;
+}
+
+.online-hire .cards .card-destaque {
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.75rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+.online-hire .cards .card-destaque .card-link-destaque {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem 1.3rem 1rem 1.3rem;
+    text-align: center;
+    max-width: 170px;
+    height: auto;
+    min-height: 240px;
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    border-radius: 5px;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque img {
+    width: 100%;
+    height: auto;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+    margin: auto 0;
+    color: #fbf5f5;
+    font-weight: 500;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque:hover .text-destaque {
+    color: #fff;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .img-hover {
+    display: none;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque:hover .img-hover {
+    display: block;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .img-padrao {
+    display: block;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque:hover .img-padrao {
+    display: none;
+}
+
+.online-hire .cards .card:hover {
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    transform: scale(1.15) translateY(-22px);
+}
+.online-hire .cards .card-link-destaque:hover {
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    transform: scale(1.15) translateY(-22px);
+    margin: auto 0;
+    color: #000;
+    font-weight: 500;
+}
+
+.card .destaque {
+    background-color: #cc092f;
+    border: 1px solid #000;
+    padding: 20px;
+
+}
+
+body>div.item-to-add-padding>section.online-hire>div>div:nth-child(8)>a>img {
+    display: flex;
+    margin: 17px auto;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+body>div.item-to-add-padding>section.online-hire>div>div:nth-child(8)>a>img.img-hover {
+    display: none;
+}
+
+.online-hire .cards .card:hover .img-hover {
+    display: block;
+}
+
+.online-hire .cards .card:hover .img-padrao {
+    display: none;
+}
+
+.online-hire .cards .card .card-link img {
+    width: 100%;
+    height: auto;
+}
+
+.online-hire .cards .card .card-link .text {
+    margin: auto 0;
+    color: #000;
+    font-weight: 500;
+}
+
+/* .online-hire .cards .card:hover .card-link .text {
+    color: #FFF;
+} */
+
+@media screen and (max-width: 1500px) {
+    .online-hire .cards .card .card-link {
+        max-width: 140px;
+        padding: 10px;
+        padding-top: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1367px) {
+    .online-hire .cards .card {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .online-hire {
+        background: #E4E5E9;
+        padding-top: 0;
+    }
+
+    .online-hire .non-account-holder span {
+        font-size: 18px;
+    }
+
+    .online-hire .cards .card .card-link img {
+        max-width: 70px;
+    }
+
+    .online-hire .cards {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 940px;
+    }
+
+    .online-hire .non-account-holder {
+        position: inherit;
+        width: 100%;
+        margin: 0;
+    }
+
+    .online-hire .cards .card {
+        flex-direction: row;
+        align-items: center;
+        margin: 0.5rem 0.3rem;
+        position: relative;
+    }
+
+    .online-hire .cards .card .card-link {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        max-width: unset;
+        height: 70px;
+        margin: 0.5rem 0.3rem;
+        justify-content: start;
+        position: relative;
+        min-height: unset;
+        padding-top: 10px;
+        padding-right: 23px;
+    }
+
+    .online-hire .cards .card .card-link .text {
+        margin: 0;
+        text-align: start;
+    }
+
+    .online-hire .cards .card:hover {
+        transform: none;
+    }
+
+    .online-hire .cards .card::after {
+        /* border: 1px solid #000; */
+        border-width: 1px 1px 0 0;
+        content: '';
+        height: 10px;
+        width: 10px;
+        /* transform: rotate(45deg); */
+        position: absolute;
+        right: 1.5rem;
+    }
+
+    .online-hire .cards .card:hover::after {
+        border-color: #FFF;
+    }
+
+    .online-hire .cards .card .card-link img {
+        width: auto;
+        height: 70%;
+        margin-right: 8px;
+    }
+}
+
+.online-hire .cards .card.tag-novo:after {
+    background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/badge/tag-novo.png) left center no-repeat;
+    content: '';
+    display: inline-block;
+    height: 64px;
+    position: absolute;
+    right: -0.75em;
+    top: -0.75em;
+    width: 64px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .online-hire .cards {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .online-hire .non-account-holder {
+        padding: 20px 42px;
+    }
+
+    .online-hire .cards .card::after .card-link {
+        border: none;
+    }
+
+    .online-hire .cards .card .card-link img {
+        margin: 0 8px 0 0;
+    }
+
+    .online-hire .cards {
+        padding: 20px;
+    }
+
+    .online-hire .cards .card .card-link .text {
+        white-space: normal;
+        text-align: start;
+        font-size: 12px;
+    }
+
+    .online-hire .cards .card.tag-novo:after {
+        background-size: cover;
+        height: 42px;
+        right: 0rem;
+        top: -1rem;
+        width: 42px;
+    }
+
+    .online-hire .cards .card-link-destaque:hover {
+        transform: none !important;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    .online-hire .cards .card-link-destaque:hover {
+        transform: none !important;
+    }
+
+    .online-hire .cards {
+        padding: 5px;
+    }
+
+    .online-hire .cards .card {
+        width: 45%;
+        height: 70px;
+    }
+
+    .online-hire .cards .card::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .online-hire .cards .card .card-link .text {
+        font-size: 12px;
+    }
+}
+
+
+.online-hire .cards .card.tag-novo {
+    position: relative;
+}
+
+
+
+.online-hire .cards .card-destaque .card-link-destaque {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem 1.3rem 1rem 1.3rem;
+    text-align: center;
+    max-width: 170px;
+    height: auto;
+    min-height: 240px;
+    border-radius: 5px;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque img {
+    width: 100%;
+    height: auto;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+    margin: auto 0;
+    color: #fbf5f5;
+    font-weight: 500;
+}
+
+.online-hire .cards .card-link-destaque:hover {
+
+    transform: scale(1.15) translateY(-22px);
+    margin: auto 0;
+    color: #000;
+    font-weight: 500;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem 1.3rem 1rem 1.3rem;
+    text-align: center;
+    max-width: 170px;
+    height: auto;
+    min-height: 240px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque img {
+    width: 100%;
+    height: auto;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+    margin: auto 0;
+    color: #3c3c3c;
+    font-weight: 500;
+}
+
+.online-hire .cards .card-destaque .card-link-destaque .text-destaque:hover {
+    margin: auto 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.online-hire .cards .card-link-destaque:hover {
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    transform: scale(1.15) translateY(-22px);
+    margin: auto 0;
+    color: #000;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 431px) {
+    .online-hire .cards .card-destaque .card-link-destaque {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        /* max-width: unset; */
+        height: 71px;
+        margin: 0.5rem -0.6rem;
+        justify-content: start;
+        position: relative;
+        min-height: unset;
+        padding-top: 10px;
+        padding-right: 23px;
+        margin-left: -6px;
+        width: 107%;
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque img {
+        width: auto;
+        height: 70%;
+        margin-right: 8px;
+
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+        font-size: 12px;
+        text-align: start;
+        margin-top: 2px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .online-hire .cards .card-destaque .card-link-destaque {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        /* max-width: unset; */
+        height: 71px;
+        margin: 0.5rem -0.6rem;
+        justify-content: start;
+        position: relative;
+        min-height: unset;
+        padding-top: 10px;
+        padding-right: 23px;
+        margin-left: -6px;
+        width: 107%;
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque img {
+        width: auto;
+        height: 70%;
+        margin-right: 8px;
+
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+        font-size: 12px;
+        text-align: start;
+        margin-top: 2px;
+
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .online-hire .cards .card-destaque .card-link-destaque {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        /* max-width: unset; */
+        height: 71px;
+        margin: 0.5rem -2.5rem;
+        justify-content: start;
+        position: relative;
+        min-height: unset;
+        padding-top: 10px;
+        padding-right: 23px;
+        margin-left: -7px;
+        width: 112%;
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque img {
+        width: auto;
+        height: 70%;
+        margin-right: 8px;
+
+    }
+
+    .online-hire .cards .card-destaque .card-link-destaque .text-destaque {
+        font-size: 12px;
+        text-align: start;
+        margin-top: -6px;
+
+    }
+
+}
+
+.img-opcoes {
+    height: 45% !important;
+
+}

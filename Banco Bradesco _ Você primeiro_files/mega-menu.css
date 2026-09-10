@@ -1,0 +1,1667 @@
+nav#MainMenuMobile.mega-menu {
+  background-color: #f0f1f5;
+  border-left: 0;
+  display: block;
+  left: 100%;
+  right: auto;
+  top: 120px !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+a.botaoAbraConta {
+  cursor: pointer;
+  left: 0;
+  font-family: "Bradesco", sans-serif;
+  font-display: swap;
+  letter-spacing: 0.6px;
+  padding-left: 20px;
+  padding-right: 40px;
+  filter: none;
+  bottom: unset;
+  border: none;
+  height: 54px;
+  line-height: 54px;
+  background: #cc092f;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  float: none;
+  clear: both;
+  position: relative;
+  display: block;
+  width: 100% !important;
+}
+
+.botaoContrate {
+  top: auto;
+  -webkit-filter: none;
+  height: 56px !important;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  left: 0;
+  background: #333B8F;
+  border: none;
+  font-family: "Bradesco", sans-serif;
+  font-display: swap;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 40px;
+  position: relative;
+  line-height: 54px;
+  float: left;
+  clear: left;
+  filter: none;
+  bottom: initial;
+  width: 100% !important;
+}
+
+.botaoContrate:after,
+.botaoAbraConta:after {
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+}
+
+.mm-panel {
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
+  -o-transition: -o-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.mm-panel.mm-opened {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+a.botaoAbraConta:hover {
+  background: #d63a59;
+}
+
+a.botaoContrate:hover {
+  background: #4059a6;
+}
+
+.mm-navbar {
+  border-bottom: 1px solid;
+  border-color: inherit;
+  text-align: center;
+  line-height: 20px;
+  height: 40px;
+  padding: 0 40px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.mm-navbar>* {
+  display: block;
+  padding: 10px 0;
+}
+
+.mm-navbar .mm-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mm-listview,
+.mm-listview>li {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.mm-listview {
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.mm-listview>li {
+  position: relative;
+}
+
+.mm-listview>li,
+.mm-listview>li:after,
+.mm-listview>li .mm-next,
+.mm-listview>li .mm-next:before {
+  border-color: inherit;
+}
+
+.mm-listview .mm-next {
+  background: rgba(3, 2, 1, 0);
+  width: 50px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.mm-listview>li,
+.mm-listview>li:after,
+.mm-listview>li .mm-next,
+.mm-listview>li .mm-next:before {
+  border-color: inherit;
+}
+
+.mm-listview a,
+.mm-listview a:hover {
+  text-decoration: none;
+}
+
+.mm-listview>li>a,
+.mm-listview>li>span {
+  overflow: hidden;
+  color: inherit;
+  display: block;
+  margin: 0;
+}
+
+.mm-hidden {
+  display: none !important;
+}
+
+nav#MainMenuMobile .botaoAbraConta,
+nav#MainMenuMobile .botaoContrate {
+  width: 100% !important;
+}
+
+h1.gradient {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1.gradient img {
+  width: 100%;
+  height: auto;
+}
+
+div.holderFixed {
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  left: 0;
+  display: none;
+  z-index: 9999;
+}
+
+header.headerMobile {
+  width: 1280px;
+  background: #cc092f;
+  background: linear-gradient(45deg, #b41a83 0%, #cc092f 49%, #f36279 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b41a83', endColorstr='#f36279', GradientType=1);
+  height: 80px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 0 20px 20px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+
+header.headerMobile a.lg-bra {
+  display: table;
+  margin-top: 2px;
+}
+
+header.headerMobile a.lg-bra img {
+  width: 100%;
+  height: auto;
+}
+
+header.headerMobile a.buscaMobile {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 40px;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+header.headerMobile a.mobileMenu {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  width: 32px;
+  height: 40px;
+  outline: none;
+  display: flex;
+  overflow: hidden;
+  align-items: start;
+}
+
+header.headerMobile a.mobileMenu img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+header.headerMobile a.mobileMenu.close img {
+  object-position: bottom;
+}
+
+.MainMenuMobile .mobile-item {
+  display: none;
+}
+
+.MainMenuMobile .items-menu {
+  padding: 0px 20px 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 230px);
+}
+
+.MainMenuMobile .items-menu .item-menu {
+  display: flex;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+nav#MainMenuMobile.mega-menu .items-menu li a.next-produtos-servicos {
+  background: 0 0;
+  color: #6d6e71;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px;
+  max-height: 54px;
+  margin-left: auto;
+}
+
+nav#MainMenuMobile.mega-menu .items-menu .item-menu-content {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6d6e71;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.mm-next:after {
+  content: "";
+  border: 1px solid #e1173f;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menulist-produtos li a::before {
+  content: "";
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 26px;
+  display: block;
+  display: inline-block;
+  content: "";
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menulist-canais li a::before {
+  content: "";
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 46px;
+  display: block;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menulist-produtos li.capitalizacao1 a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/capitalizacao.svg");
+}
+
+.menulist-produtos li.cambio a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cambio.svg");
+}
+
+.menulist-produtos li.cartoes1 a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cartoes.svg");
+}
+
+.menulist-produtos li.tarifas a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cesta.svg");
+}
+
+.menulist-produtos li.consorcios1 a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/consorcio.svg");
+}
+
+.menulist-produtos li.emprestimo-e-financiamento a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/emprestimo.svg");
+}
+
+.menulist-produtos li.investimentos1 a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/investimento.svg");
+}
+
+.menulist-produtos li.leiloes-de-imoveis a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/leiloes.svg");
+}
+
+.menulist-produtos li.renegociacao-de-dividas a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/renegociacao.svg");
+}
+
+.menulist-produtos li.seguros1 a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/seguros.svg");
+}
+
+.menulist-produtos li.tipos-de-conta a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/tipo-de-conta.svg");
+}
+
+.menulist-produtos li.vida-e-previdencia a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/vida-previdencia.svg");
+}
+
+.menulist-produtos li.mais-produtos-servicos a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/servicos.svg");
+}
+
+.mega-menu-canais {
+  background-color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+  display: flex;
+  width: 491px;
+  height: 27.1rem;
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  padding: 8px;
+  opacity: 1;
+  align-content: center;
+  z-index: 9;
+}
+
+.menulist-canais {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.menulist-canais li {
+  padding: 8px;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  width: 25%;
+  padding: 10px !important;
+  transition: 0.5s !important;
+  left: 0;
+}
+
+.menulist-canais li a {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-left: 0;
+  border-radius: 4px;
+  color: #a7a8ac !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.18px;
+  line-height: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100% !important;
+  min-width: 105px;
+  align-content: center;
+  align-items: center;
+  height: 125px;
+  text-align: center;
+  /* padding: 10px 8px 15px 10px !important; */
+}
+
+.menulist-canais li.fale-com-a-bia,
+.menulist-canais li.whatsapp {
+  flex-basis: 50%;
+}
+
+.fale-com-a-bia a {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/fale-com-a-bia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px 155px;
+}
+
+.whatsapp a {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.png");
+  background-image: -webkit-image-set(url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.png") 1x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px 155px;
+}
+
+.whatsapp a:after,
+.fale-com-a-bia a:after {
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#47484c),
+      to(#47484c));
+  background: linear-gradient(180deg, #47484c 0%, #47484c 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.menulist-canais li.fale-com-a-bia a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia-hover.svg");
+  height: 33px;
+  width: 21px;
+  z-index: 2;
+}
+
+.fale-com-a-bia a span,
+.whatsapp a span {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  bottom: 35px;
+}
+
+.menulist-canais li.whatsapp a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.svg");
+  height: 39px;
+  width: 39px;
+  z-index: 2;
+}
+
+.menulist-canais li.como-usar-bradesco a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/como-usar.svg");
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 10px
+}
+
+.menulist-canais li.internet-banking a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/internet-banking.svg");
+  top: 60%;
+  left: 10px;
+  width: 35px;
+}
+
+.menulist-canais li.aplicativos-bradesco a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/app-bradesco.svg");
+  left: 18px;
+  top: 50%;
+  height: 36px;
+  width: 35px;
+}
+
+.menulist-canais li.autoatendimento a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/caixa-eletronico.svg");
+  left: 12px;
+  top: 23px;
+  height: 30px;
+  width: 30px;
+}
+
+.menulist-canais li.bia a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia.svg");
+  left: 12px;
+  top: 24px;
+  height: 30px;
+  width: 30px;
+}
+
+.menulist-canais li.bia:hover a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia-hover.svg");
+  left: 12px;
+  top: 24px;
+  height: 30px;
+  width: 30px;
+}
+
+
+.menulist-canais li.fale-com-a-bia a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia-hover.svg");
+  height: 33px;
+  width: 21px;
+  z-index: 2;
+}
+
+.menulist-canais li.whatsapp a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.svg");
+  height: 39px;
+  width: 39px;
+  z-index: 2;
+}
+
+.menulist-canais li.fone-facil a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/fone-facil.svg");
+  height: 26px;
+  width: 26px;
+}
+
+.menulist-canais li.podcast a::before {
+  height: 20px;
+  width: 20px;
+}
+
+.menulist-canais li.bradesco-explica a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bradesco-explica.svg");
+  height: 22px;
+  width: 34px;
+}
+
+.menulist-canais li.horarios-limites a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/horarios-limites.svg");
+  height: 20px;
+  width: 20px;
+}
+
+.menulist-canais li.horarios-limites a,
+.menulist-canais li.podcast a {
+  top: -0.7rem;
+}
+
+h1.gradient::before,
+.menulist-canais li.podcast a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-podcast-cinza.png");
+}
+
+/* icon-podcast-branco */
+.menulist-canais li.podcast a:hover:before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-podcast-branco.png");
+}
+
+.menulist-canais::before {
+  content: none !important;
+}
+
+@media screen and (min-width: 1025px) {
+  nav#MainMenuMobile {
+    position: absolute !important;
+    background-color: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-content: center !important;
+    align-items: flex-start !important;
+    justify-content: flex-end !important;
+    border-left: 0px !important;
+    width: 188px !important;
+    height: 387px;
+    margin: 0 60px !important;
+    float: left !important;
+    left: 0px !important;
+  }
+
+  nav#MainMenuMobile .botaoAbraConta {
+    display: block !important;
+    width: 188px !important;
+  }
+
+  a.botaoContrate {
+    z-index: 1;
+    width: fit-content !important;
+    height: fit-content !important;
+    font-size: 12px !important;
+  }
+
+  div#mm-1 {
+    width: 188px;
+    height: auto;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .mm-navbar {
+    display: none !important;
+  }
+
+  #menu-lateral {
+    position: relative;
+  }
+
+  .mm-listview li {
+    width: 190px;
+    min-height: 45px;
+    left: -10px;
+  }
+
+  nav#MainMenuMobile ul li:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110px;
+    background: #eee;
+    margin: 0 auto;
+  }
+
+  [data-target="#mm-2"] {
+    display: none !important;
+  }
+
+  .mm-next {
+    opacity: 0 !important;
+    width: 100% !important;
+  }
+
+  .next-produtos-servicos {
+    cursor: pointer;
+  }
+
+  .mm-next~a {
+    position: absolute;
+    top: 0px;
+  }
+
+  .mm-listview>li>a,
+  .mm-listview>li>span {
+    padding: 11px 20px 11px 58px !important;
+  }
+
+  .mm-listview .mm-next+a,
+  .mm-listview .mm-next+span {
+    margin-right: 0px !important;
+  }
+
+  .mm-listview li a:not(.mm-next) {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 59px;
+    position: relative;
+  }
+
+  nav#MainMenuMobile ul li a {
+    color: #222222;
+  }
+
+  .menu-lateral li a:not(.mm-next):before {
+    content: "";
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 29px;
+    height: 28px;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+  }
+
+  .menu-lateral li.produtos-servicos a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-produtos-servicos.svg");
+  }
+
+  .menu-lateral li.produtos-servicos:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-produtos-servicos-red.svg");
+  }
+
+  .menu-lateral li.promocoes a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-shop.svg");
+  }
+
+  .menu-lateral li.promocoes:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-shop-hover.svg");
+  }
+
+  .menu-lateral li.educacao-financeira a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-educ-financeira.svg");
+  }
+
+  .menu-lateral li.educacao-financeira:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-educ-financeira-red.svg");
+  }
+
+  .menu-lateral li.canais-digitais a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-bradesco-celular.svg");
+  }
+
+  .menu-lateral li.canais-digitais:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-bradesco-celular-red.svg");
+  }
+
+  .menu-lateral li.atendimento a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-contato.svg");
+  }
+
+  .menu-lateral li.atendimento:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/icon-contato-red.svg");
+  }
+
+  .acessibilidade1 {
+    display: none !important;
+  }
+
+  .encontrar-agencia {
+    display: none !important;
+  }
+
+  .mega-menu-produtos {
+    background-color: #ffffff;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    width: 563px;
+    height: 392px;
+    position: absolute;
+    top: -5px;
+    right: 1px;
+    padding: 8px;
+    opacity: 1;
+    z-index: 9;
+  }
+
+  .menulist-produtos {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menulist-produtos:before {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #e1173f;
+    content: "Produtos";
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    height: auto;
+    line-height: 16px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+  }
+
+  .menulist-produtos li {
+    padding: 8px !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    width: 33%;
+  }
+
+  nav#MainMenuMobile ul li:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 110px;
+    background: #eee;
+    margin: 0 auto;
+  }
+
+  .mega-menu-produtos .menulist-produtos li a {
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 155px;
+    height: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 0px 10px 0 50px !important;
+  }
+
+  .menulist-produtos li a {
+    font-size: 12px;
+    margin-left: 7px;
+    position: relative;
+    margin-left: 0.8rem !important;
+    display: flex;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 166px;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  .menulist-produtos li.capitalizacao1:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/capitalizacao-hover.svg");
+  }
+
+  .menulist-produtos li.cambio:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cambio-hover.svg");
+  }
+
+  .menulist-produtos li.cartoes1:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cartoes-hover.svg");
+  }
+
+  .menulist-produtos li.tarifas:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/cesta-hover.svg");
+  }
+
+  .menulist-produtos li.consorcios1:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/consorcio-hover.svg");
+  }
+
+  .menulist-produtos li.emprestimo-e-financiamento:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/emprestimo-hover.svg");
+  }
+
+  .menulist-produtos li.investimentos1:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/investimento-hover.svg");
+  }
+
+  .menulist-produtos li.leiloes-de-imoveis:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/leiloes-hover.svg");
+  }
+
+  .menulist-produtos li.renegociacao-de-dividas:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/renegociacao-hover.svg");
+  }
+
+  .menulist-produtos li.seguros1:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/seguros-hover.svg");
+  }
+
+  .menulist-produtos li.tipos-de-conta:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/tipos-de-conta-hover.svg");
+  }
+
+  .menulist-produtos li.vida-e-previdencia:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/vida-previdencia-hover.svg");
+  }
+
+  .menulist-produtos li.mais-produtos-servicos:hover a::before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/servicos-hover.svg");
+  }
+
+  nav#MainMenuMobile ul.menulist-produtos li a:hover {
+    color: #fff;
+  }
+
+  .mega-menu-produtos .menulist-produtos li a:hover {
+    background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        from(#cc092f),
+        to(#b2207b));
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    color: #fff;
+  }
+
+  li.mais-produtos-servicos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100% !important;
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 13;
+    order: 13;
+    z-index: 1;
+  }
+
+  li.mais-produtos-servicos a {
+    opacity: 1;
+    color: #e1173f !important;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    line-height: 16px;
+    outline: 0;
+    width: 100% !important;
+  }
+
+  li.mais-produtos-servicos:hover a {
+    color: #fff !important;
+  }
+
+  .mega-menu-canais {
+    background-color: #ffffff;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    width: 200px;
+    height: 284px;
+    position: absolute;
+    top: 103px;
+    right: 1px;
+    padding: 8px;
+    opacity: 1;
+    align-content: center;
+    z-index: 9;
+  }
+
+  .menulist-canais {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  .menulist-canais li {
+    padding: 8px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    width: 100%;
+    padding: 10px !important;
+    transition: 0.5s !important;
+    left: 0;
+  }
+
+  .menulist-canais li a {
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-left: 0;
+    border-radius: 4px;
+    color: #a7a8ac !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.18px;
+    line-height: 16px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100% !important;
+    min-width: 105px;
+    align-content: start!important;
+    align-items: center;
+    justify-content: center!important;
+    height: 45px;
+    text-align: center;
+    /* padding: 10px 8px 15px 10px !important; */
+    padding: 0 10px 0 56px!important;
+    text-align: start!important;
+  }
+
+  .mega-menu-canais .menulist-canais li:not(.fale-com-a-bia, .whatsapp) a:hover {
+    background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        from(#cc092f),
+        to(#b2207b));
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    color: #fff !important;
+  }
+
+  .menulist-canais li.fale-com-a-bia,
+  .menulist-canais li.whatsapp {
+    flex-basis: 50%;
+  }
+
+  .fale-com-a-bia a {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/fale-com-a-bia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px 155px;
+  }
+
+  .whatsapp a:after,
+  .fale-com-a-bia a:after {
+    background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        from(#47484c),
+        to(#47484c));
+    background: linear-gradient(180deg, #47484c 0%, #47484c 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .whatsapp a:hover:after,
+  .fale-com-a-bia a:hover:after {
+    background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        from(#cc092f),
+        to(#b2207b));
+    background: linear-gradient(180deg, #cc092f 0%, #b2207b 100%);
+    opacity: 0.7;
+  }
+
+  .menulist-canais li a:before {
+    content: "";
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 46px;
+    display: block;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .menulist-canais li.fale-com-a-bia a:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia-hover.svg");
+    height: 33px;
+    width: 21px;
+    z-index: 2;
+  }
+
+  .fale-com-a-bia a span,
+  .whatsapp a span {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    bottom: 35px;
+  }
+
+  .next-canais-digitais {
+    cursor: pointer;
+  }
+
+  .canais-digitais a~a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    align-content: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .whatsapp a {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px 155px;
+  }
+
+  .menulist-canais li.fone-facil,
+  .menulist-canais li.bradesco-explica,
+  .menulist-canais li.horarios-limites,
+  .menulist-canais li.podcast {
+    flex-basis: 50%;
+    margin: -30px 0px -30px 0px;
+  }
+
+  .menulist-canais li.horarios-limites {
+    flex-basis: 100%;
+  }
+
+  .menulist-canais li.fone-facil a,
+  .menulist-canais li.bradesco-explica a,
+  .menulist-canais li.horarios-limites a,
+  .menulist-canais li.podcast a {
+    height: 50px !important;
+    padding: 0px 10px 0 50px !important;
+    flex-direction: row !important;
+  }
+
+  .menulist-canais li.como-usar-bradesco a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/como-usar-hover.svg");
+  }
+
+  .menulist-canais li.internet-banking a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/internet-banking-hover.svg");
+  }
+
+  .menulist-canais li.aplicativos-bradesco a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/app-bradesco-hover.svg");
+  }
+
+  .menulist-canais li.autoatendimento a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/caixa-eletronico-hover.svg");
+  }
+
+  .menulist-canais li.fale-com-a-bia a:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bia-hover.svg");
+    height: 33px;
+    width: 21px;
+    z-index: 2;
+  }
+
+  .menulist-canais li.whatsapp a:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/whatsapp.svg");
+    height: 39px;
+    width: 39px;
+    z-index: 2;
+  }
+
+  .menulist-canais li.fone-facil a:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/fone-facil.svg");
+    height: 26px;
+    width: 26px;
+  }
+
+  .menulist-canais li.fone-facil a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/fone-facil-hover.svg");
+  }
+
+  .menulist-canais li.bradesco-explica a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/bradesco-explica-hover.svg");
+  }
+
+  .menulist-canais li.horarios-limites a:hover:before {
+    background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/horarios-limites-hover.svg");
+  }
+
+  .menulist-canais li.podcast a:before {
+    height: 20px;
+    width: 20px;
+  }
+
+  .menulist-canais li.fone-facil a:before,
+  .menulist-canais li.bradesco-explica a:before,
+  .menulist-canais li.horarios-limites a:before,
+  .menulist-canais li.podcast a:before {
+    left: 10px;
+    top: 50%;
+    height: 26px;
+    width: 45px;
+  }
+
+  .menulist-canais li.horarios-limites a,
+  .menulist-canais li.podcast a {
+    top: -0.7rem;
+  }
+
+  .menulist-canais li.bradesco-explica a::before {
+    height: 22px;
+    width: 34px;
+  }
+
+  .menulist-canais li.horarios-limites a::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .MainMenuMobile {
+    z-index: 998 !important;
+    position: relative !important;
+    display: block !important;
+    float: left !important;
+    top: -75px !important;
+    left: 0px !important;
+    width: 190px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .MainMenuMobile {
+    position: fixed;
+    height: 100%;
+  }
+
+  .MainMenuMobile .desktop-item {
+    display: none;
+  }
+
+  .MainMenuMobile .mobile-item {
+    display: block;
+  }
+
+  nav#MainMenuMobile.mega-menu.mm-opened {
+    left: 0;
+    right: auto;
+  }
+
+  div.holderFixed {
+    background: #ffffff;
+    display: block;
+  }
+
+  header.headerMobile {
+    display: block;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 20px 20px 20px 47px !important;
+  }
+
+  header.headerMobile a.buscaMobile {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='28.5px' height='28.6px' viewBox='0 0 18.5 18.6' enable-background='new 0 0 18.5 18.6' xml:space='preserve'%3e%3cg id='Camada_2' display='none'%3e%3crect x='-7' y='-11.5' display='inline' fill='%23DD8B14' width='40.1' height='41'/%3e%3c/g%3e%3cg id='Lupa'%3e%3ccircle fill='none' stroke='%23FFFFFF' stroke-width='2.5' cx='8.6' cy='8.3' r='6.7'/%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='bevel' d='M13.5,12.9l2.8,3.5'/%3e%3c/g%3e%3c/svg%3e") 0 0 no-repeat;
+    top: 24px;
+    right: 70px;
+    transition: all linear 0.25s;
+    display: block !important;
+  }
+
+  header.headerMobile a.mobileMenu {
+    right: 20px;
+  }
+
+  nav#MainMenuMobile.mega-menu.mm-menu {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  nav#MainMenuMobile.mega-menu .botaoAbraConta {
+    -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li .mm-panel {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background: 0 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li .mm-panel.mm-opened {
+    max-height: 999px;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview::before {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #e1173f;
+    content: "Produtos";
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    font-size: 13px;
+    font-weight: 700;
+    height: auto;
+    line-height: 16px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 4px !important;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li.horarios-limites,
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li.podcast {
+    margin-top: 20px;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li a {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: Bradesco, sans-serif;
+    font-display: swap;
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 100%;
+    letter-spacing: -0.18px;
+    line-height: 16px;
+    min-height: 70px;
+    position: relative;
+    padding-left: 42px;
+    padding-right: 17px;
+    color: #6d6e71;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li.mais-produtos-servicos {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-top: 16px;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 13;
+    order: 13;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list ul.mm-listview li.mais-produtos-servicos a {
+    color: #e1173f;
+    font-size: 13px;
+    font-weight: 700;
+    height: 64px;
+    line-height: 16px;
+    min-height: 0;
+    outline: 0;
+    opacity: 1;
+    padding-left: 54px;
+  }
+
+  .mega-menu-canais {
+    position: inherit;
+    height: unset;
+  }
+
+  .menulist-canais {
+    height: unset;
+  }
+
+  
+  .menulist-canais li a::before {
+    left: 10px;
+    top: 50%;
+    height: 26px;
+    width: 45px;
+  }
+
+  .menulist-canais li {
+    width: 50%;
+    flex-basis: 100%!important;
+  }
+  .menulist-canais li a {
+    text-align: left;
+  }
+
+  .menulist-canais li.bia {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
+
+ 
+  .menulist-canais li.como-usar-bradesco a::before {
+    height: 28px;
+    width: 27px;
+    top: 50%;
+  }
+
+  .menulist-canais li.internet-banking a::before {
+    height: 20px;
+    width: 47px;
+    top: 50%;
+  }
+
+  .menulist-canais li.aplicativos-bradesco a::before {
+    height: 35px;
+    width: 22px;
+    top: 50%;
+  }
+
+  .menulist-canais li.autoatendimento a::before {
+    height: 35px;
+    width: 26px;
+    top: 50%;
+  }
+
+  .menulist-canais li.fone-facil a::before {
+    height: 19px;
+    width: 19px;
+    top: 50%;
+  }
+
+  .menulist-canais li.bradesco-explica a::before {
+    height: 20px;
+    width: 29px;
+    top: 50%;
+  }
+
+  .menulist-canais li.horarios-limites a::before {
+    height: 20px;
+    width: 20px;
+    top: 50%;
+  }
+
+  .menulist-canais li a {
+    height: 50px !important;
+    padding: 0px 10px 0 50px !important;
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .menulist-canais li.bia a::before{
+    top: 34px;
+    width:28px;
+    height:28px;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list .menulist-canais li.fale-com-a-bia a,
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list .menulist-canais li.whatsapp a {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 205%;
+    color: #fff;
+    height: 175px !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 105px;
+    padding: 0 10px;
+    text-align: center;
+    min-height: unset;
+    padding: 0 !important;
+  }
+
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list .menulist-canais li.fale-com-a-bia a::before,
+  nav#MainMenuMobile.mega-menu ul.mm-listview>li.list .menulist-canais li.whatsapp a::before {
+    left: 0;
+    margin: 0 auto 0px;
+    position: relative;
+    top: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  header.headerMobile {
+    width: 1024px;
+  }
+}
+
+.mega-menu-canais {
+  background-color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+  display: flex;
+  width: 200px;
+  height: 284px;
+  position: absolute;
+  top: 103px;
+  right: 1px;
+  padding: 8px;
+  opacity: 1;
+  align-content: center;
+  z-index: 9;
+}
+
+.menulist-canais li.shop a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/shop.svg");
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 10px
+}
+
+.menulist-canais li.mimos a::before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/mimos.svg");
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 10px
+}
+
+.menulist-canais li.shop a:hover:before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/shop-hover.svg");
+}
+
+.menulist-canais li.mimos a:hover:before {
+  background-image: url("https://assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/mimos-hover.svg");
+}
+
+#mm-4 {
+  height: 130px;
+}
+
+#mm-4 li {
+  flex-basis: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #mm-4-mobile > ul {
+    width: 100%;
+  }
+
+  #mimos\:more-results-btn {
+    right: -15px;
+    top: 15px;
+  }
+}

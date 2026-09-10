@@ -1,0 +1,205 @@
+html.accessib-contraste-pa body,
+html.accessib-contraste-pb body,
+html.accessib-contraste-pa .mega-menu-produtos,
+html.accessib-contraste-pb .mega-menu-produtos,
+html.accessib-contraste-pa .mega-menu-canais,
+html.accessib-contraste-pb .mega-menu-canais,
+html.accessib-contraste-pa .online-hire .non-account-holder,
+html.accessib-contraste-pb .online-hire .non-account-holder,
+html.accessib-contraste-pa .mainHeader button#textobusca,
+html.accessib-contraste-pb .mainHeader button#textobusca,
+html.accessib-contraste-pa .mainHeader ul.navSeg li div.navCnt ul.nav > li a:hover,
+html.accessib-contraste-pb .mainHeader ul.navSeg li div.navCnt ul.nav > li a:hover,
+html.accessib-contraste-pa .float-abra-conta-link,
+html.accessib-contraste-pb .float-abra-conta-link {
+    background-color: #000!important;
+    box-shadow: none!important;
+}
+
+html.accessib-contraste-pa *,
+html.accessib-contraste-pa .online-hire .non-account-holder,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa,
+html.accessib-contraste-pa .menulist-produtos:before {
+    color: #ff0 !important;
+    box-shadow: none!important;
+}
+
+html.accessib-contraste-pa .online-hire .cards .card .card-link,
+html.accessib-contraste-pa .benefits-section .benefits-list .benefit-card {
+    background: #000!important;
+    border: 1px solid #ff0!important;
+    border-radius: 7px!important;
+    color: #ff0!important;
+    filter: unset!important;
+}
+
+html.accessib-contraste-pb .online-hire .cards .card .card-link,
+html.accessib-contraste-pb .benefits-section .benefits-list .benefit-card,
+html.accessib-contraste-pb {
+    background: #000!important;
+    border: 1px solid #fff!important;
+    border-radius: 7px!important;
+}
+
+html.accessib-contraste-pa .como-usar-after,
+html.accessib-contraste-pb .como-usar-after,
+html.accessib-contraste-pa .legenda-after,
+html.accessib-contraste-pb .legenda-after,
+html.accessib-contraste-pa #box__destaques .carrossel-destaques,
+html.accessib-contraste-pb #box__destaques .carrossel-destaques,
+html.accessib-contraste-pa .benefits-section::before,
+html.accessib-contraste-pb .benefits-section::before{ 
+    filter: grayscale(1)!important;
+}
+
+html.acessib-contraste-pa ul.navSeg li div.navCnt ul.nav > li:after{
+    background-color: #ff0!important
+}
+
+html.acessib-contraste-pa .mainHeader ul.navSeg li div.navCnt ul.nav > li a:hover {
+    color: #ff0 !important;
+}
+
+html.accessib-contraste-pa nav#MainMenuMobile ul.menulist-produtos li a:hover
+{
+    background: none!important;
+    filter: invert(1) sepia(1) saturate(90) brightness(100) opacity(100%)!important;
+}
+
+
+html.accessib-contraste-pa #anime{
+    background: #ff0!important;
+}
+
+html.accessib-contraste-pb #anime{
+    background: #fff!important;
+}
+
+html.accessib-contraste-pa .flex-prev:before,
+html.accessib-contraste-pa .flex-next:before,
+html.accessib-contraste-pa .flex-play:before,
+html.accessib-contraste-pa .flex-pause:before
+html.accessib-contraste-pa .menulist-produtos:before {
+    color: #ff0!important;
+}
+
+html.accessib-contraste-pb .flex-pause:before,
+html.accessib-contraste-pb .flex-prev:before,
+html.accessib-contraste-pb .flex-next:before,
+html.accessib-contraste-pb .flex-pause:before,
+html.accessib-contraste-pb .menulist-produtos:before{
+    color: #fff!important;
+}
+
+html.accessib-contraste-pa .mainHeader button#textobusca:after,
+html.accessib-contraste-pb .mainHeader button#textobusca:after,
+html.accessib-contraste-pa .online-hire .non-account-holder:hover,
+html.accessib-contraste-pb .online-hire .non-account-holder:hover {
+    filter: grayscale(100%)!important;
+}
+
+html.accessib-contraste-pa .modal-busca .modal-content-busca,
+html.accessib-contraste-pb .modal-busca .modal-content-busca { 
+    z-index: 999!important;
+    background: #000!important;
+}
+
+html.accessib-contraste-pb div#topBar div.holder form fieldset>ul li.lembrar input[type=checkbox]+label:before {
+    border: 1px solid #fff!important;
+}
+
+html.accessib-contraste-pb div#topBar div.holder form fieldset>ul li.lembrar input[type=checkbox]:checked+label:before {
+    filter: invert(1) sepia(1) saturate(0) brightness(100) opacity(100%)!important;
+}
+
+
+html.accessib-contraste-pb .menu-lateral li a::before,
+html.accessib-contraste-pb .menulist-produtos li a::before
+ {
+    filter: invert(1) sepia(0) saturate(0) brightness(100) opacity(100%)!important;
+}
+
+html.accessib-contraste-pb .menulist-produtos li:hover a::before
+
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li>a:not(.mm-next),
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li>a:not(.mm-next)>span
+
+{
+    filter: none!important;
+    color: #ff0!important;
+    background: #000!important;
+}
+
+html.accessib-contraste-pb nav#MainMenuMobile ul.menulist-produtos li a:hover,
+html.accessib-contraste-pb nav#MainMenuMobile ul.menulist-produtos li a:hover>span,
+html.accessib-contraste-pb nav#MainMenuMobile ul li a
+{
+    filter: none!important;
+    color: #fff!important;
+    background: #000!important;
+}
+
+
+html.accessib-contraste-pb nav#MainMenuMobile ul.menulist-produtos li:hover a::before {
+    filter: invert(0) sepia(0) saturate(90) brightness(100) opacity(100%)!important
+}   
+
+
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li:hover>a:before{
+    filter: none;
+    color: #fff;
+}
+
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li:hover>a:before,
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li.como-usar-bradesco>a:before{
+    filter: invert(1) sepia(1) saturate(90) brightness(100) opacity(100%)!important
+}
+
+
+
+html.accessib-contraste-pa .whatsapp a:hover:after, .fale-com-a-bia a:hover:after,
+html.accessib-contraste-pa .whatsapp a:hover:after, .whatsapp a:hover:after{
+    background: linear-gradient(90deg, #1f1f1f 0%, #000 100%);
+}
+html.accessib-contraste-pa .whatsapp a:hover:after, .fale-com-a-bia a:after,
+html.accessib-contraste-pa .whatsapp a:hover:after, .whatsapp a:after {
+    background: linear-gradient(90deg, #1f1f1f 0%, #000 100%);
+}
+
+
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li.fale-com-a-bia>a:before,
+html.accessib-contraste-pa nav.mega-menu ul.mm-listview>li.whatsapp>a:before
+{
+    filter: invert(0) sepia(1) saturate(90) brightness(100) opacity(100%)!important
+}
+
+html.accessib-contraste-pa #MainMenuMobile ul.mm-listview>li>a:not(.mm-next) {
+    background: none!important;
+    color: #000!important;
+}
+
+html.accessib-contraste-pa #MainMenuMobile ul.mm-listview>li.fale-com-a-bia>a:not(.mm-next),
+html.accessib-contraste-pa #MainMenuMobile ul.mm-listview>li.whatsapp>a:not(.mm-next) {
+    filter: none!important;
+}
+
+html.accessib-contraste-pa #MainMenuMobile ul.mm-listview>li.fale-com-a-bia>a:not(.mm-next) span,
+html.accessib-contraste-pa #MainMenuMobile ul.mm-listview>li.whatsapp>a:not(.mm-next) span {
+    color: #ff0!important;
+}
+html.accessib-contraste-pa #MainMenuMobile nav.mega-menu ul.mm-listview>li:hover>a:before {
+    filter: none!important;
+}
+html.accessib-contraste-pb #acessib-menu-feat #acessib-menu .acessib-content ul li a img{
+    filter: grayscale(1) invert(1) brightness(100) opacity(100%)!important
+}
+
+#cookies {
+    z-index: 1075;
+}

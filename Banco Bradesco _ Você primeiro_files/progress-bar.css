@@ -1,0 +1,335 @@
+#carousel-banner #carousel .flex-viewport {
+    /* bottom: 7vw; */
+    height: auto;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 20px;
+}
+
+#carousel-banner #carousel .flex-viewport ul.slides {
+    padding-right: 0;
+    transform: none !important;
+}
+
+#carousel-banner #carousel .flex-viewport ul.slides>li.flex-active-slide {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+
+#carousel-banner #carousel .flex-viewport ul.slides>li {
+    max-width: 25px;
+    height: 4px;
+    transition: height 0.2s linear;
+}
+#carousel-banner #carousel .flex-viewport ul.slides>li:hover {
+    height: 15px;
+}
+
+.filtro_topo {
+    display: none;
+}
+
+.home div#carousel {
+    display: block;
+}
+
+.flex-control-nav {
+    display: none;
+}
+.progress-bar {
+    position: relative;
+    background-color: #00000052;
+    cursor: pointer;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 40px;
+}
+
+.progress-bar.flex-active-slide {
+    width: 200px!important;
+}
+
+.progress-bar div {
+    position: absolute;
+    height: 6px;
+    width: 0;
+}
+
+.progress-bar .progress {
+    background-color: #fff;
+    /* width: 15px !important;
+    height: 15px !important;*/
+    border-radius: 40px; 
+}
+
+
+
+@keyframes toggle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (min-width : 768px) {
+
+
+    #carousel-banner #carousel .flex-viewport {
+        /* bottom: 4vw; */
+    }
+
+
+    #carousel-banner #carousel .flex-viewport ul.slides>li {
+        max-width: 150px;
+    }
+
+    .progress-bar div {
+        height: 6px;
+    }
+}
+
+@media (min-width : 1024px) {
+    .filtro_topo {
+        display: block;
+        z-index: 3;
+    }
+}
+
+.custom-navigation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -92px;
+    z-index: 9;
+    /* left: 40px; */
+}
+
+.custom-navigation a {
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 25px!important;
+    height: 25px!important;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.flex-pauseplay a {
+    /* bottom: 0!important; */
+    /* left: 440px!important; */
+    outline: none!important;
+    position: unset!important;
+    background-color: #00000052;
+}
+
+.flex-play:before {
+    color:#fff;
+    content: '▶'!important;
+    font-size: 15px!important;
+    position: relative;
+    top: 0;
+}
+
+.flex-pause:before {
+    color:#fff;
+    content: '❚❚'!important;
+    font-size: 15px!important;
+    position: relative;
+    top: 0;
+}
+
+a.flex-next {
+    transition: none !important;
+    opacity: 1!important;
+    right: 5px !important;
+}
+a.flex-prev {
+    transition: none !important;
+    opacity: 1!important;
+    left: 5px !important;
+}
+
+.custom-controls-container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.flex-direction-nav a {
+    position: unset!important;
+}
+
+.flex-direction-nav {
+    order: -1;
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+}
+
+#carousel-banner #carousel .flex-viewport {
+    bottom: 0!important;
+
+}
+
+.flex-direction-nav a {
+    margin: 0!important;
+    background-color: #00000052;
+}
+
+.flex-direction-nav li.flex-nav-prev {
+    margin: 0 10px 0 0;
+}
+
+.flex-direction-nav a.flex-prev:before {
+    content: '<'!important;
+    font-family: Bradesco;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    padding: 1px 1px 0 0;
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: '>'!important;
+    font-family: Bradesco;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    padding: 1px 0 0 1px;
+}
+
+.tooltip_prev {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(0,0,0,.9);
+    font-size: 0.85em;
+    line-height: 1.6em;
+    border-radius: 10px;
+    width: 210px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: -100px;
+    left: 55%;
+}
+
+.tooltip_prev::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0,0,0,.9);
+    bottom: -10px;
+    left: 60%;
+}
+
+.tooltip_next {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(0,0,0,.9);
+    font-size: 0.85em;
+    line-height: 1.6em;
+    border-radius: 10px;
+    width: 210px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: -100px;
+    left: 63%;
+}
+
+.tooltip_next:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0,0,0,.9);
+    bottom: -10px;
+    left: 60%;
+}
+
+.showThis {
+    display: flex!important
+}
+
+@media screen and (max-width: 768px) {
+    .custom-navigation {
+        top: -40px;
+    }
+
+    .flex-pauseplay {
+        display: none;
+    }
+
+    .custom-controls-container {
+        display: block;
+        width: 100%;
+    }
+
+    .flex-direction-nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    #carousel-banner #carousel .flex-viewport {
+        width: 140px;
+        margin: 0 auto;
+    }
+
+    .grey__bar {
+        margin-top: -25px;
+    }
+
+    .filtro {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, 0) 100%);
+        bottom: 0;
+    }
+}
+
+
+#anime {
+    width: 0;
+    -webkit-animation: mymove 5s infinite; 
+    -webkit-animation-play-state: running;
+    animation: mymove 11s infinite;
+    animation-play-state: running;
+}
+
+
+@-webkit-keyframes mymove {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes mymove {
+    from {width: 0;}
+    to {width: 100%;}
+}

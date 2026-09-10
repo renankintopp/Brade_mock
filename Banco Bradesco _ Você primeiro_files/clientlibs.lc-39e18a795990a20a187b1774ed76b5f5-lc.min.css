@@ -1,0 +1,351 @@
+/* Floating BIA Component Styles */
+.cmp-floating-bia[data-cmp-is="floating-bia"] {
+  position: fixed !important;
+  bottom: 150px !important;
+  right: 30px !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease !important;
+  z-index: 999999 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  position: absolute;
+  /* Esconde o texto de screen reader adicionado pelo AEM para links */
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-link__screen-reader-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"]:not(.is-open):focus-visible {
+  outline: 2px solid var(--primary, #cc092f) !important;
+  outline-offset: 2px !important;
+  border-radius: 16px !important;
+}
+.cmp-floating-bia {
+  /* Borda padrão (pequena) */
+  /* Borda grande quando resize-border está ativo */
+}
+.cmp-floating-bia .cmp-floating-bia__icon-wrapper {
+  border: 8px solid #ffdbe6 !important;
+}
+.cmp-floating-bia:hover .cmp-floating-bia__icon-wrapper {
+  border: 13px solid #ffb7cc !important;
+}
+.cmp-floating-bia[data-resize-border="true"] .cmp-floating-bia__icon-wrapper {
+  border: 50px solid #ffdbe6 !important;
+}
+.cmp-floating-bia[data-resize-border="true"]:hover .cmp-floating-bia__icon-wrapper {
+  border: 55px solid #ffb7cc !important;
+}
+/* Main Container - Icon with Title */
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__container {
+  position: relative !important;
+  width: 80px !important;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+/* Title Above Icon (with z-index) */
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__title {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2 !important;
+  font-family: 'Bradesco Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  text-align: center !important;
+  max-width: 80px !important;
+  word-wrap: break-word !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+  white-space: normal !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__title p {
+  margin: 0 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  text-align: center !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  color: #FFFFFF !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__title b {
+  font-family: 'Bradesco Sans Bold', sans-serif !important;
+  color: #FFFFFF !important;
+}
+/* Icon Wrapper */
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__icon-wrapper {
+  box-sizing: content-box !important;
+  /* Garante que a borda seja calculada FORA das dimensões */
+  width: 90px !important;
+  height: 90px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  /* Box Shadow */
+  box-shadow: 0px 4px 8px 0px rgba(80, 80, 80, 0.35) !important;
+  /* Hover Effects */
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"]:hover .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__icon-wrapper {
+  transform: scale(1.05) !important;
+  border: 80px solid #FFDBE6 !important;
+  box-shadow: 0px 8px 16px 0px rgba(80, 80, 80, 0.45) !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"]:active .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__icon-wrapper {
+  transform: scale(0.98) !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__icon {
+  width: 90px !important;
+  height: 90px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  max-width: none;
+}
+/* ================================
+   Modal Styles (Popover)
+   ================================ */
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal {
+  /* Anchor above the icon, not overlapping it */
+  position: absolute !important;
+  bottom: -40% !important;
+  /* 12px gap above the button */
+  right: -15px !important;
+  /* align right edge with the button */
+  z-index: 1000001 !important;
+  display: none !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal.is-active {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-backdrop {
+  display: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-content {
+  position: relative !important;
+  background: linear-gradient(180deg, #e1173f 0%, #b41a83 100%) !important;
+  border-radius: 20px !important;
+  padding: 25px !important;
+  width: 330px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  animation: popUp 0.3s ease-out !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  /* Border with Gradient */
+  border: 5px solid transparent !important;
+  background-image: linear-gradient(180deg, #e1173f 0%, #b41a83 100%), linear-gradient(180deg, #f36279 0%, #bc2e4d 100%) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+}
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-close {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FFFFFF !important;
+  transition: all 0.2s ease !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-close:focus-visible {
+  outline: 2px solid #FFFFFF !important;
+  outline-offset: 2px !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-close svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-body {
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 8px 0 0 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+  border: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-qrcode {
+  width: 85px !important;
+  height: 85px !important;
+  object-fit: contain !important;
+  background: #FFFFFF !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-divider {
+  width: 2px !important;
+  height: 85px !important;
+  background: #FFFFFF !important;
+  margin: 0 25px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-title {
+  font-family: 'Bradesco Sans Bold', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #FFFFFF !important;
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  background: transparent !important;
+  border: none !important;
+  text-shadow: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text {
+  font-family: 'Bradesco Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  text-align: left !important;
+  max-width: 125px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  text-shadow: none !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text p {
+  margin: 0 0 8px 0 !important;
+  color: #FFFFFF !important;
+  font-family: 'Bradesco Sans', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text p:last-child {
+  margin-bottom: 0 !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text strong,
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text b {
+  font-family: 'Bradesco Sans SemiBold', sans-serif !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text a {
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text a:hover {
+  opacity: 0.8 !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text ul,
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text ol {
+  margin: 8px 0 !important;
+  padding-left: 20px !important;
+  text-align: left !important;
+  color: #FFFFFF !important;
+}
+.cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-text li {
+  margin-bottom: 4px !important;
+  color: #FFFFFF !important;
+}
+/* ================================
+   Responsive Design
+   ================================ */
+@media (max-width: 768px) {
+  .cmp-floating-bia[data-cmp-is="floating-bia"] {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+  .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__container {
+    width: 72px !important;
+    height: 72px !important;
+    border-radius: 50% !important;
+  }
+  .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal {
+    position: absolute !important;
+    bottom: calc(108%) !important;
+    /* slightly smaller gap on mobile */
+    right: 0 !important;
+  }
+  .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__modal-content {
+    width: 260px !important;
+    padding: 12px !important;
+  }
+}
+/* ================================
+   Mobile - Floating Position
+   ================================ */
+@media (max-width: 767px) {
+  .cmp-floating-bia[data-cmp-is="floating-bia"] {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+  .cmp-floating-bia[data-cmp-is="floating-bia"] .cmp-floating-bia__container {
+    width: 100px !important;
+    height: auto !important;
+    min-height: 120px !important;
+  }
+}

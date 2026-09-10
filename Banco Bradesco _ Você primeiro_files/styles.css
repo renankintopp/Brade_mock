@@ -1,0 +1,489 @@
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Bold-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Bold.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Bold.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-BoldItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-BoldItalic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-BoldItalic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Condensed-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Condensed.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Condensed.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Condensed.woff2") format("woff2");
+  font-weight: 400;
+  font-style: condensed
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Italic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Italic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Italic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Light-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Light.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Light.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-LightItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-LightItalic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-LightItalic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Medium-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Medium.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Medium.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-MediumItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-MediumItalic-web.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-MediumItalic-web.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-MediumItalic-web.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Regular-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Regular.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Regular.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBold-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBold.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBold.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBoldItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBoldItalic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBoldItalic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Thin-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Thin.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Thin.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-ThinItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-ThinItalic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-ThinItalic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBold-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBold.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBold.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Bradesco";
+  font-display: swap;
+  src: url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBoldItalic-web.ttf") format("ttf"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBoldItalic.eot") format("eot"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBoldItalic.woff") format("woff"), url("https://publish-p128342-e1259725.adobeaemcloud.com/content/dam/portal-bradesco/assets/classic/home/fonts/BradescoSans-XBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bradesco";
+  font-display: swap;
+  outline: none;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.remove-scroll {
+  overflow: hidden;
+}
+
+section {
+  z-index: 1;
+}
+
+button {
+  border-width: 0px;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.item-to-add-padding {
+  overflow: hidden;
+}
+
+/* remover padding-top quando o usuário fechar o aviso no mobile */
+.headertopBar[style*="display: flex"]~.item-to-add-padding {
+  padding-top: 40px;
+}
+
+.headertopBar[style*="display: flex"]~.item-to-add-padding .modal-busca,
+.headertopBar[style*="display: flex"]~.item-to-add-padding div.holderFixed {
+  top: 40px;
+}
+
+.headertopBar[style*="display: flex"]~.item-to-add-padding nav#MainMenuMobile.mega-menu,
+.headertopBar[style*="display: flex"]~.item-to-add-padding .segments-mobile {
+  top: 130px;
+}
+
+.desk-show-only {
+  display: flex;
+}
+
+.mobile-show-only {
+  display: none;
+}
+
+div.modal:not(.modal-unlock) {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  width: 420px;
+}
+
+div.modal header {
+  border-radius: 10px 10px 0 0;
+  background: #ededed;
+  width: 100%;
+  height: auto;
+  line-height: 50px;
+  border-bottom: 2px solid #cc092f;
+  position: relative;
+  padding: 0 120px 0 20px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.modal header span.title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.modal section {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+div.modal section {
+  margin-bottom: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+div.modal section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+div.modal section fieldset {
+  border-radius: 5px;
+}
+
+div.modal section fieldset h4 {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/ico_IB.jpg) no-repeat left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+div.modal section fieldset p {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/common/img/ico_cpf.jpg) no-repeat left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+div.modal section fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.modal section fieldset ul li {
+  float: left;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+div.modal section fieldset ul li input[type="text"] {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+div.modal section fieldset ul li input[type="text"]#AGN {
+  width: 80px;
+}
+
+div.modal section fieldset ul li input[type="text"]#CTA {
+  width: 80px;
+}
+
+div.modal section fieldset ul li input[type="text"]#DIGCTA {
+  width: 30px;
+}
+
+div.modal section fieldset ul li.link {
+  margin-left: 10px;
+}
+
+div.modal section fieldset ul li.link a {
+  display: table;
+  position: relative;
+  text-decoration: none;
+  color: #393939;
+  margin-top: 5px;
+}
+
+div.modal section fieldset ul li.link a:before {
+  content: '\203A';
+  position: absolute;
+  top: -2px;
+  right: -12px;
+  font-size: 17px;
+}
+
+div.modal section fieldset ul li.link a:hover {
+  color: #75a7ec;
+}
+
+div.modal section ul.accordion div.description p {
+  margin: 0 0 20px 0 !important;
+}
+
+div.modal section a {
+  color: #393939;
+}
+
+div.modal section a:hover {
+  color: #75a7ec;
+}
+
+div.modal section a.lnk-blue {
+  color: #00539f;
+}
+
+div.modal section a.lnk-blue:hover {
+  color: #75a7ec;
+}
+
+div.modal section a.lnk-red {
+  color: #cc0a2f;
+}
+
+div.modal section a.lnk-red:hover {
+  color: #ea1b49;
+}
+
+div.modal button.mfp-close {
+  position: absolute;
+  display: table;
+  right: 20px;
+  top: 11px;
+  width: 76px;
+  height: 24px;
+  padding: 0 0 0 12px;
+  line-height: 23px;
+  color: #000;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  background: #f6f6f6;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(50%, #ffffff), color-stop(100%, #efefef));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(50%, #ffffff), to(#efefef));
+  background: linear-gradient(to bottom, #f6f6f6 0%, #ffffff 50%, #efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#efefef', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  opacity: 1;
+  text-decoration: none;
+}
+
+div.modal button.mfp-close:hover {
+  color: #488ae6;
+}
+
+div.modal button.mfp-close:before {
+  content: '\00d7';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  color: #ff0000;
+  font-size: 18px;
+}
+
+div.modal input[type="submit"].ok {
+  width: 44px;
+  height: 27px;
+  line-height: 13px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  background: #b90925;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #b90925), color-stop(50%, #e31b32), color-stop(100%, #b90a25));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90925), color-stop(50%, #e31b32), to(#b90a25));
+  background: linear-gradient(to bottom, #b90925 0%, #e31b32 50%, #b90a25 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b90925', endColorstr='#b90a25', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #b90925;
+  color: #fff;
+}
+
+#modalSistemaInfoCredito p {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.8em;
+  margin-top: 10px;
+}
+
+#modalSistemaInfoCredito ul li {
+  margin: 0 0 15px 0;
+}
+
+.mfp-bg, 
+.mfp-wrap {
+  z-index: 99998 !important;
+}
+
+.swiper-container {
+  margin-left: -15px;
+}
+
+.swiper-pagination {
+  left: 0px !important;
+  top: 705px !important;
+  display: flex !important;
+  justify-content: center !important;
+  position: relative !important;
+  top: -60px !important;
+  align-items: center;
+  right: 0px !important;
+}
+
+@media screen and (max-width:1600px) {
+  .swiper-container {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .desk-show-only {
+    display: none;
+  }
+
+  .mobile-show-only {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  #rybena-sidebar{
+      visibility: visible;
+      opacity: 1;
+      right: 0!important;
+    }
+    #rybena-player-div {
+      left: 0!important;
+    }
+    .rybenaGuide{
+      left: 5px!important;
+    }
+}
+
+@media (max-width: 750px) {
+  .swiper-container {
+    margin-top: 130px;
+  }
+
+  .swiper-pagination {
+    top: -40px !important;
+  }
+}
+
+@media (max-width: 542px) {
+  div.modal:not(.modal-unlock) {
+    width: 100%;
+  }
+}
+
+/* Inicio: Ajuste Header Footer */
+
+.item-to-add-padding nav#MainMenuMobile.mega-menu {
+  top: 130px !important;
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fim: Ajuste Header Footer */
