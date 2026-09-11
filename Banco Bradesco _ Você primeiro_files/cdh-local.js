@@ -12,6 +12,13 @@
       label.textContent = 'Saiba mais';
     });
 
+    var firstCard = document.querySelector('.cdh-extension-wrap .front-option');
+    var firstCardTitle = firstCard && firstCard.querySelector('h3');
+    var firstCardAction = firstCard && firstCard.querySelector('.hidden-details .accept');
+    if (firstCardTitle && firstCardAction && firstCardTitle.textContent.trim() === 'Taxas Especiais para Você!') {
+      firstCardAction.textContent = 'Contrate já';
+    }
+
     var rejectButtons = document.querySelectorAll('.cdh-extension-wrap .reject');
     rejectButtons.forEach(function (button) {
       button.textContent = 'Ver depois';
