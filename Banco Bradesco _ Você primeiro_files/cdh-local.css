@@ -21,13 +21,18 @@
   display: inline-flex;
   vertical-align: top;
   width: calc(25% - 18px);
-  min-height: 360px;
+  height: 420px;
   margin: 9px;
   overflow: hidden;
   background: #fff;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+}
+
+.cdh-extension-wrap .front-option:has(.hidden-details.is-visible),
+.cdh-extension-wrap .tile:has(.hidden-details.is-visible) {
+  height: auto;
 }
 
 .cdh-extension-wrap .details {
