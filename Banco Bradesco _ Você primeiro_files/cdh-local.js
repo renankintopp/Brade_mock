@@ -1,4 +1,11 @@
 (function () {
+  var actionUrls = {
+    'Taxas Especiais para Você!': 'https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/credito-pessoal/index.shtm',
+    'Finalize seu Contrato de Crédito Online': 'https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/credito-pessoal-consignado.shtm',
+    'Aprovação Rápida de Crédito!': 'https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/antecipacao-saque-aniversario.shtm',
+    'Aprovações Rápidas!': 'https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/credito-pessoal/limite-de-credito-pessoal.shtm'
+  };
+
   function updateLearnMoreLabels() {
     var labels = document.querySelectorAll('.cdh-extension-wrap .cdh-learnmore-label');
     labels.forEach(function (label) {
@@ -36,9 +43,11 @@
     }
 
     if (accept) {
-      closeCard(accept.closest('.front-option, .tile'));
-      var link = banner.closest('a[href]');
-      if (link) window.location.assign(link.href);
+      var card = accept.closest('.front-option, .tile');
+      var heading = card && card.querySelector('h3');
+      var destination = heading && actionUrls[heading.textContent.trim()];
+      closeCard(card);
+      if (destination) window.location.assign(destination);
       return;
     }
 
